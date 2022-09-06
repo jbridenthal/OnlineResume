@@ -1,0 +1,43 @@
+---
+import Profile from "@assets/profile.json";
+---
+
+<div class="experience">
+    {
+        Profile.workHistory.map((exp) => (
+            <section>
+                <div class="title">{exp.title}</div>
+                <div class="subtitle">
+                    {exp.company}, {exp.location} / {exp.startDate}-
+                    {exp.endDate}
+                </div>
+                <ul>
+                    {exp.bullets.map((bullet) => (
+                        <li>{bullet}</li>
+                    ))}
+                </ul>
+            </section>
+        ))
+    }
+</div>
+<style>
+    .title {
+        font-weight: bold;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .subtitle {
+        font-style: italic;
+        font-size: 0.7rem;
+    }
+    li {
+        font-size: 0.9rem;
+    }
+    .experience {
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        padding-top: 1rem;
+    }
+</style>

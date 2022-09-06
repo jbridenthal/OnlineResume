@@ -1,0 +1,53 @@
+/* https://coolors.co/0d1b2a-1b263b-415a77-778da9-e0e1dd */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+:root {
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+
+    --color-text: rgb(224, 225, 221);
+    --color-bg: rgb(13, 27, 42);
+    --color-border: hsl(17, 24%, 90%);
+    --color-link: rgb(119, 141, 169);
+    --color-link-hover: hsl(214, 23%, 64%);
+    --color-hr: hsl(219, 37%, 17%);
+}
+
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 100px;
+    max-width: 900px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-link-hover);
+}
+
+hr {
+    border: 3px solid var(--color-hr);
+    border-radius: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}

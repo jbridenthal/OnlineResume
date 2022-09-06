@@ -1,0 +1,35 @@
+---
+import "@styles/global.css";
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<fieldset>
+	<legend>{title}</legend>
+	<section>
+		<slot />
+	</section>
+</fieldset>
+
+<style>
+	fieldset {
+		border: 0.2rem solid var(--color-hr);
+		border-radius: 1rem;
+		margin: 1.5rem;
+	}
+
+	legend {
+		border: 0.2rem solid var(--color-hr);
+		margin-left: 1em;
+		padding: 0.2em 0.8em;
+		border-radius: 1rem;
+	}
+	section {
+		display: flex;
+		align-items: center;
+		gap: 4em;
+	}
+</style>

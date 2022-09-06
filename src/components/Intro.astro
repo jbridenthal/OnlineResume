@@ -1,0 +1,67 @@
+---
+import ProfileImage from "@assets/images/profile.png";
+import Profile from "@assets/profile.json";
+---
+
+<section class="wrapper">
+    <div class="introContent">
+        <div class="leftSide">
+            <img src={ProfileImage} alt="Avatar" />
+            <section class="socials">
+                {
+                    Profile.intro.socials.map((social) => (
+                        <a href={social.link} target="_blank">
+                            {social.name}
+                        </a>
+                    ))
+                }
+            </section>
+        </div>
+        <div class="rightSide">
+            <span class="name">{Profile.intro.name}</span>
+            <p class="intro">
+                {Profile.intro.blurb}
+            </p>
+        </div>
+    </div>
+</section>
+
+<style>
+    img {
+        border-radius: 50%;
+        padding: 15px;
+        width: 150px;
+        margin-left: 3rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+    .leftSide {
+        width: 300px;
+        float: left;
+        justify-content: center;
+    }
+
+    .rightSide {
+        justify-content: center;
+        margin-left: 1rem;
+    }
+
+    .introContent {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        column-gap: 1em;
+        flex-wrap: wrap;
+    }
+</style>

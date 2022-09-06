@@ -1,0 +1,106 @@
+{
+    "intro": {
+        "name": "James Bridenthal",
+        "blurb": "Full stack developer focusing on .Net web api's, various UI libraries, and Azure services. I am always looking to about learning new technologies, developing new skills and using the right tools that best suites the needs of the client.",
+        "socials": [
+            {
+                "name": "Github",
+                "link": "https://github.com/jbridenthal"
+            },
+            {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/in/jamesbridenthal?trk=profile-badge"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "skill": "10+ years .Net Frameworks using C#, VB.Net, Standard Framework, .Net Core",
+            "link": ""
+        },
+        {
+            "skill": "Experience using front end UI technologies in Angular, React, Blazor, Astro",
+            "link": ""
+        },
+        {
+            "skill": "Experience using various database both relational and no-sql in Microsft SQL, CosmosDB, MySql, PostGRES, MongoDB",
+            "link": ""
+        },
+        {
+            "skill": "Azure Cloud Technologies",
+            "link": ""
+        },
+        {
+            "skill": "Microsoft AI Fundamentals Certified",
+            "link": "https://www.credly.com/badges/ee14e881-5d71-4380-acae-513735404da1"
+        }
+    ],
+    "workHistory": [
+        {
+            "title": "Senior Software Engineer V",
+            "company": "MRI Software",
+            "location": "Cleveland, OH (Remote)",
+            "startDate": "August 2011",
+            "endDate": "Present",
+            "bullets": [
+                "Architect, build, and integrate legacy affordable and public housing applications adhering them to government guidelines while interacting with government API's",
+                "Full stack development using Angular, Javascript, C# and other .Net technologies.",
+                "Develop a test suite using SpecFlow and nunit to run integration tests against functionality and workflows",
+                "Participate in client meetings to better understand their needs and ideas for the product",
+                "Maintain legacy application developed in Powerbuilder and SQL including dev ops for CI/CD",
+                "Mentor junior developers on practices and processes",
+                "Accomplished saving clients from leaving our product to a competitor with a proof of concept to production enhancement.",
+                "Starting stages of gaining exposure to Azure for CI/CD and AI development",
+                "Manage summer interns and health check project using Playwright, C# and Azure technologies to help ensure core product meets standards for quality product."
+            ]
+        },
+        {
+            "title": "Software Engineer Contractor",
+            "company": "Tek Systems/Agrilogic",
+            "location": "Maitland, FL",
+            "startDate": "May 2015",
+            "endDate": "July 2015",
+            "bullets": [
+                "Worked with ASP.Net, C# and JavaScript to create new functionality while maintaining existing current functionality",
+                "Develop update scripts for PostGRES database"
+            ]
+        }
+    ],
+    "credentials": [
+        {
+            "title": "CIW v5 Associate Web Development",
+            "info": [
+                {
+                    "title": "2011",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "title": "AAS Computer Science",
+            "info": [
+                {
+                    "title": "Ivy Tech Community College",
+                    "link": ""
+                },
+                {
+                    "title": "Marion, IN 2008 - 2011",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "title": "Microsoft AI Fundamentals",
+            "info": [
+                {
+                    "title": "2022",
+                    "link": ""
+                },
+                {
+                    "title": "Credily.com Verification",
+                    "link": "https://www.credly.com/badges/ee14e881-5d71-4380-acae-513735404da1/public_url"
+                }
+            ]
+        }
+    ]
+}

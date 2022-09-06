@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Card from "@components/Card.astro";
+import Intro from "@components/Intro.astro";
+import SkillSet from "@components/SkillSet.astro";
+import Experience from "@components/Experience.astro";
+import Credentials from "@components/Credentials.astro";
+import Profile from "@assets/profile.json";
+---
+
+<Layout title={Profile.intro.name + " Online Resume"}>
+	<main>
+		<Intro />
+		<Card title="Skills"><SkillSet /></Card>
+		<Card title="Experience"><Experience /></Card>
+		<Card title="Credentials & Certifications"><Credentials /></Card>
+	</main>
+</Layout>
+
+<style>
+
+</style>

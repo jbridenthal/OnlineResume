@@ -1,0 +1,37 @@
+---
+import Profile from "@assets/profile.json";
+import { shared } from "@services/shared";
+
+const functions = new shared();
+---
+
+<section class="wrapper">
+    <ul>
+        {
+            Profile.skills.map(function (skill) {
+                if (functions.IsEmpty(skill.link)) {
+                    return <li> {skill.skill}</li>;
+                } else {
+                    return (
+                        <li>
+                            <a href={skill.link}>{skill.skill}</a>
+                        </li>
+                    );
+                }
+            })
+        }
+    </ul>
+</section>
+<style>
+    ul {
+        list-style: none;
+        list-style-position: outside;
+        padding-left: 2rem;
+        text-indent: -0.9rem;
+    }
+    ul li::before {
+        content: "✔️";
+        display: inline-block;
+        margin-right: 0.2rem;
+    }
+</style>
