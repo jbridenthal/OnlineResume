@@ -4,5 +4,9 @@
 
 An online resume that is easily editable and can be changed. Data is in a json file and can be easily changed.
 
+Hosted on Github
+
+https://jbridenthal.github.io/OnlineResume/
+
 
 
