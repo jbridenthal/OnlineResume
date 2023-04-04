@@ -48,14 +48,15 @@
             "endDate": "Present",
             "bullets": [
                 "Architect, build, and integrate legacy affordable and public housing applications adhering them to government guidelines while interacting with government API's",
-                "Full stack development using Angular, Javascript, C# and other .Net technologies.",
-                "Develop a test suite using SpecFlow and nunit to run integration tests against functionality and workflows",
+                "Full stack development in an agile environmnet using Angular, Javascript, C# and other .Net technologies.",
+                "Writing unit tests using nunit, moq, and xunit",
                 "Participate in client meetings to better understand their needs and ideas for the product",
                 "Maintain legacy application developed in Powerbuilder and SQL including dev ops for CI/CD",
                 "Mentor junior developers on practices and processes",
                 "Accomplished saving clients from leaving our product to a competitor with a proof of concept to production enhancement.",
-                "Starting stages of gaining exposure to Azure for CI/CD and AI development",
-                "Manage summer interns and health check project using Playwright, C# and Azure technologies to help ensure core product meets standards for quality product."
+                "Exposure to Azure for CI/CD and AI development",
+                "Manage summer interns and health check project using Playwright, C# and Azure technologies to help ensure core product meets standards for quality product.",
+                "Develop a test suite using SpecFlow and nunit to run integration tests against functionality and workflows"
             ]
         },
         {
