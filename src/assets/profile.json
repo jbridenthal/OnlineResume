@@ -48,26 +48,16 @@
             "endDate": "Present",
             "bullets": [
                 "Architect, build, and integrate legacy affordable and public housing applications adhering them to government guidelines while interacting with government API's",
-                "Full stack development in an agile environment using Angular, Javascript, C# and other .Net technologies.",
-                "Writing unit tests using nunit, moq, and xunit",
-                "Participate in client meetings to better understand their needs and ideas for the product",
+                "Work on a Scrum team consisting of developers, quality assurance, product owner and scrum master. Participate in daily stand ups meetings, grooming sessions and participate in retro meetings.",
+                "Full stack development in an agile environment using Angular, Javascript, C# and other .Net technologies. Writing unit tests using nunit, moq, xunit and spectator.",
+                "Mentor junior developers on best practices, processes and coding standards.",
+                "Code review code changes to ensure code quality meets our coding standards and also aligns with proper business logic of the product",
+                "Create and maintain CI/CD for our software in Azure DevOps.",
+                "Develop an integration test suite using SpecFlow and nunit to run tests against functionality and workflows",
                 "Maintain legacy application developed in Powerbuilder and SQL including dev ops for CI/CD",
-                "Mentor junior developers and interns on practices and processes",
-                "Accomplished saving clients from leaving our product to a competitor with a proof of concept to production enhancement.",
-                "Exposure to Azure for CI/CD and AI development",
-                "Manage summer interns and health check project using Playwright, C# and Azure technologies to help ensure core product meets standards for quality product.",
-                "Develop a test suite using SpecFlow and nunit to run integration tests against functionality and workflows"
-            ]
-        },
-        {
-            "title": "Software Engineer Contractor",
-            "company": "Tek Systems/Agrilogic",
-            "location": "Maitland, FL",
-            "startDate": "May 2015",
-            "endDate": "July 2015",
-            "bullets": [
-                "Worked with ASP.Net, C# and JavaScript to create new functionality while maintaining existing current functionality",
-                "Develop update scripts for PostGRES database"
+                "Help create health check project using Playwright, C# and Azure technologies for storage and database to help ensure core product meets standards for quality product.",
+                "Mentoring summer interns as they work on their project to present to directors at the end of their internship.",
+                "Recently handed an legacy product with no documentation where all previous developers have left. I have had to identify all projects associated with product, setup for local development, build new CI/CD, and document the processes for the product for future development."
             ]
         }
     ],
