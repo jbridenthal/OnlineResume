@@ -1,7 +1,7 @@
 {
     "intro": {
         "name": "James Bridenthal",
-        "blurb": "Full stack developer focusing on .Net web api's, various UI libraries, and Azure services. I am always looking to learn about new technologies, developing new skills and using the right tools that best suits the needs of the client.",
+        "blurb": "Innovative Full Stack Developer with 15 years of experience specializing in .NET Web APIs, modern UI frameworks, and Azure cloud solutions. Dedicated to delivering scalable, high-performance applications that solve complex business challenges. Passionate about continuous learning and selecting optimal technologies to exceed client expectations and drive business value.",
         "socials": [
             {
                 "name": "Github",
@@ -15,19 +15,23 @@
     },
     "skills": [
         {
-            "skill": "10+ years .Net Frameworks using C#, VB.Net, Standard Framework, .Net Core",
+            "skill": "Backend Development: 15+ years with .NET Framework, .NET Core, C#, VB.NET, ASP.NET Web API, RESTful API design",
             "link": ""
         },
         {
-            "skill": "Experience using front end UI technologies in Angular, React, Blazor, Astro",
+            "skill": "Frontend Development: Angular, React, Blazor, Astro, HTML5, CSS3, JavaScript/TypeScript",
             "link": ""
         },
         {
-            "skill": "Experience using various database both relational and no-sql in Microsft SQL, CosmosDB, MySql, PostGRES, MongoDB",
+            "skill": "Database Technologies: Microsoft SQL Server, CosmosDB, MySQL",
             "link": ""
         },
         {
-            "skill": "Azure Cloud Technologies",
+            "skill": "Cloud Services: Azure App Services, Azure Functions, Azure DevOps, Azure API Management",
+            "link": ""
+        },
+        {
+            "skill": "Development Methodologies: Agile/Scrum, CI/CD, Test-Driven Development, SOLID principles",
             "link": ""
         },
         {
