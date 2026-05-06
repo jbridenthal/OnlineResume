@@ -1,7 +1,7 @@
 {
   "name": "Resume",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.*",
+  "packageManager": "pnpm@10.33.4",
   "private": true,
   "scripts": {
     "dev": "astro dev",
