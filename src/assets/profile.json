@@ -1,7 +1,7 @@
 {
     "intro": {
         "name": "James Bridenthal",
-        "blurb": "Innovative Full Stack Developer with 15 years of experience specializing in .NET Web APIs, modern UI frameworks, and Azure cloud solutions. Dedicated to delivering scalable, high-performance applications that solve complex business challenges. Passionate about continuous learning and selecting optimal technologies to exceed client expectations and drive business value.",
+        "blurb": "Systems Architect and Legacy Modernization Expert with 15 years of experience bridging complex legacy infrastructures with modern cloud system ecosystems within stand alone and enterprise applications. Proven track record of ensuring 100% uptime for mission-critical applications while architecting scalable, CI/CD-driven modernization strategies.",
         "socials": [
             {
                 "name": "Github",
@@ -15,7 +15,11 @@
     },
     "skills": [
         {
-            "skill": "Backend Development: 15+ years with .NET Framework, .NET Core, C#, VB.NET, ASP.NET Web API, RESTful API design",
+            "skill": "System Architecture & DevOps (CI/CD, Azure DevOps, Legacy Migration, Reverse Engineering)",
+            "link": ""
+        },
+        {
+            "skill": "Backend Development: 15+ years with .NET Framework, .NET Core, C#, VB.NET, ASP.NET Web API, RESTful API design.  ",
             "link": ""
         },
         {
@@ -23,11 +27,7 @@
             "link": ""
         },
         {
-            "skill": "Database Technologies: Microsoft SQL Server, CosmosDB, MySQL",
-            "link": ""
-        },
-        {
-            "skill": "Cloud Services: Azure App Services, Azure Functions, Azure DevOps, Azure API Management",
+            "skill": "Database Technologies: Microsoft SQL Server, MySQL",
             "link": ""
         },
         {
@@ -51,17 +51,16 @@
             "startDate": "August 2011",
             "endDate": "Present",
             "bullets": [
-                "Architect, build, and integrate legacy affordable and public housing applications adhering them to government guidelines while interacting with government API's",
-                "Work on a Scrum team consisting of developers, quality assurance, product owner and scrum master. Participate in daily stand ups meetings, grooming sessions and participate in retro meetings.",
-                "Full stack development in an agile environment using Angular, Javascript, C# and other .Net technologies. Writing unit tests using nunit, moq, xunit and spectator.",
-                "Mentor junior developers on best practices, processes and coding standards.",
-                "Code review code changes to ensure code quality meets our coding standards and also aligns with proper business logic of the product",
-                "Create and maintain CI/CD for our software in Azure DevOps.",
-                "Develop an integration test suite using SpecFlow and nunit to run tests against functionality and workflows",
-                "Maintain legacy application developed in Powerbuilder and SQL including dev ops for CI/CD",
-                "Help create health check project using Playwright, C# and Azure technologies for storage and database to help ensure core product meets standards for quality product.",
+                "Spearheaded the rescue and stabilization of an undocumented, orphaned legacy application. Successfully reverse-engineered the core architecture, re-established local development environments, and designed a modern CI/CD pipeline in Azure DevOps to ensure future maintainability and zero downtime",
+                "Simultaneously serve as the technical lead for a modern product ecosystem, utilizing modern front-end frameworks and Azure cloud services to ensure scalable, high-performance delivery.",
+                "Full stack development in an agile environment using Angular, JavaScript, C# and other .NET technologies. Writing unit tests using NUnit, Moq, xUnit.",
                 "Mentoring summer interns as they work on their project to present to directors at the end of their internship.",
-                "Recently handed an legacy product with no documentation where all previous developers have left. I have had to identify all projects associated with product, setup for local development, build new CI/CD, and document the processes for the product for future development."
+                "Help create health check project using Playwright, C# and Azure technologies for storage and database to help ensure core product meets standards for quality product.",
+                "Create and maintain CI/CD for our software in Azure DevOps.",
+                "Maintain legacy application developed in PowerBuilder and SQL including DevOps for CI/CD.",
+                "Perform code reviews to ensure code quality meets our coding standards and aligns with business logic.",
+                "Mentor junior developers on best practices, processes and coding standards.",
+                "Develop an integration test suite using SpecFlow and NUnit to run tests against functionality and workflows."
             ]
         }
     ],
