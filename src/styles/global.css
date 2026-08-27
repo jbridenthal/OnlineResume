@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
 :root {
+    color-scheme: dark;
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
     --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
@@ -12,6 +13,17 @@
     --color-link: rgb(119, 141, 169);
     --color-link-hover: hsl(214, 23%, 64%);
     --color-hr: hsl(219, 37%, 17%);
+    --color-check: rgb(22, 128, 67);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --color-text: rgb(31, 41, 55);
+    --color-bg: rgb(248, 250, 252);
+    --color-border: rgb(31, 41, 55);
+    --color-link: rgb(37, 99, 135);
+    --color-link-hover: rgb(21, 67, 92);
+    --color-hr: rgb(203, 213, 225);
 }
 
 
@@ -29,6 +41,56 @@ body {
     vertical-align: middle;
     padding-top: 100px;
     max-width: 1100px;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    z-index: 10;
+    border: 1px solid var(--color-link);
+    border-radius: 999px;
+    padding: 0.55rem 0.85rem;
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--color-text);
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.theme-icon {
+    margin-right: 0.35rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    color: var(--color-bg);
+    background: var(--color-text);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--color-link-hover);
+    outline-offset: 3px;
+}
+
+html,
+body,
+fieldset,
+legend,
+.theme-toggle {
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 80px 1rem 0;
+    }
+
+    .theme-toggle {
+        top: 1rem;
+        right: 1rem;
+    }
 }
 
 a {

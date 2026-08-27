@@ -6,11 +6,15 @@ import Profile from "@assets/profile.json";
 <section class="wrapper">
     <div class="introContent">
         <div class="leftSide">
-            <img src={ProfileImage.src} alt="Avatar" />
+            <img src={ProfileImage.src} alt={Profile.intro.name} />
             <section class="socials">
                 {
                     Profile.intro.socials.map((social) => (
-                        <a href={social.link} target="_blank">
+                        <a
+                            href={social.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             {social.name}
                         </a>
                     ))
@@ -18,7 +22,7 @@ import Profile from "@assets/profile.json";
             </section>
         </div>
         <div class="rightSide">
-            <span class="name">{Profile.intro.name}</span>
+            <h1 class="name">{Profile.intro.name}</h1>
             <p class="intro">
                 {Profile.intro.blurb}
             </p>
@@ -36,6 +40,7 @@ import Profile from "@assets/profile.json";
 
     .name {
         font-size: 3rem;
+        margin: 0;
     }
 
     .intro {
@@ -63,5 +68,30 @@ import Profile from "@assets/profile.json";
         justify-content: center;
         column-gap: 1em;
         flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+        .wrapper {
+            display: block;
+        }
+
+        .leftSide {
+            width: auto;
+            float: none;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .rightSide {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .intro {
+            margin-right: 0;
+        }
     }
 </style>

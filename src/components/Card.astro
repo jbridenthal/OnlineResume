@@ -7,27 +7,33 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<fieldset>
-	<legend>{title}</legend>
-	<section>
+<section class="card">
+	<h2>{title}</h2>
+	<div class="card-content">
 		<slot />
-	</section>
-</fieldset>
+	</div>
+</section>
 
 <style>
-	fieldset {
+	.card {
 		border: 0.2rem solid var(--color-hr);
 		border-radius: 1rem;
 		margin: 1.5rem;
+		padding: 0.35em 0.75em 0.625em;
 	}
 
-	legend {
+	h2 {
+		font-size: var(--font-size-lg);
+		font-weight: normal;
 		border: 0.2rem solid var(--color-hr);
 		margin-left: 1em;
+		margin-top: 0;
+		margin-bottom: 0.5em;
 		padding: 0.2em 0.8em;
 		border-radius: 1rem;
+		display: inline-block;
 	}
-	section {
+	.card-content {
 		display: flex;
 		align-items: center;
 		gap: 4em;

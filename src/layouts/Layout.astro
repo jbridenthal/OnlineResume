@@ -8,17 +8,63 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={Favicon} />
+		<link rel="icon" type="image/x-icon" href={Favicon} />
 		<meta name="generator" content={Astro.generator} />
+		<script is:inline>
+			try {
+				const savedTheme = localStorage.getItem("resume-theme");
+				if (savedTheme === "light" || savedTheme === "dark") {
+					document.documentElement.dataset.theme = savedTheme;
+				}
+			} catch {}
+		</script>
 
 		<title>{title}</title>
 	</head>
 	<body>
+		<button
+			class="theme-toggle"
+			type="button"
+			aria-label="Switch to light mode"
+		>
+			<span class="theme-icon" aria-hidden="true">☀</span>
+			<span class="theme-label" aria-hidden="true">Light mode</span>
+		</button>
 		<slot />
+		<script is:inline>
+			const themeToggle = document.querySelector(".theme-toggle");
+			const setTheme = (theme) => {
+				document.documentElement.dataset.theme = theme;
+				try {
+					localStorage.setItem("resume-theme", theme);
+				} catch {}
+				themeToggle.setAttribute(
+					"aria-label",
+					theme === "dark"
+						? "Switch to light mode"
+						: "Switch to dark mode",
+				);
+				themeToggle.querySelector(".theme-icon").textContent =
+					theme === "dark" ? "☀" : "☾";
+				themeToggle.querySelector(".theme-label").textContent =
+					theme === "dark" ? "Light mode" : "Dark mode";
+			};
+
+			const currentTheme =
+				document.documentElement.dataset.theme || "dark";
+			setTheme(currentTheme);
+			themeToggle.addEventListener("click", () => {
+				setTheme(
+					document.documentElement.dataset.theme === "dark"
+						? "light"
+						: "dark",
+				);
+			});
+		</script>
 	</body>
 </html>
