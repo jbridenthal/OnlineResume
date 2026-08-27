@@ -2,12 +2,13 @@
 import "@styles/global.css";
 export interface Props {
 	title: string;
+	id?: string;
 }
 
-const { title } = Astro.props;
+const { title, id } = Astro.props;
 ---
 
-<fieldset>
+<fieldset id={id}>
 	<legend>{title}</legend>
 	<section>
 		<slot />

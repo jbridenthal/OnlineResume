@@ -68,6 +68,13 @@ const profileImageUrl = new URL(ProfileImage.src, Astro.url);
 			<span class="theme-icon" aria-hidden="true">☀</span>
 			<span class="theme-label" aria-hidden="true">Light mode</span>
 		</button>
+		<nav class="floating-menu" aria-label="Resume sections">
+			<a href="#top">Top</a>
+			<a href="#skills">Skills</a>
+			<a href="#experience">Experience</a>
+			<a href="#selected-work">Selected Work</a>
+			<a href="#education">Education</a>
+		</nav>
 		<slot />
 		<script is:inline>
 			const themeToggle = document.querySelector(".theme-toggle");

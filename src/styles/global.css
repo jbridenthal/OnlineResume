@@ -65,6 +65,35 @@ body {
     margin-right: 0.35rem;
 }
 
+.floating-menu {
+    position: fixed;
+    top: 4.75rem;
+    right: 1.25rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.4rem;
+    border: 1px solid var(--color-hr);
+    border-radius: 0.75rem;
+    background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+    backdrop-filter: blur(8px);
+}
+
+.floating-menu a {
+    border-radius: 0.45rem;
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.floating-menu a:hover,
+.floating-menu a:focus-visible {
+    color: var(--color-bg);
+    background: var(--color-text);
+    text-decoration: none;
+}
+
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
     color: var(--color-bg);
@@ -84,6 +113,14 @@ legend,
     transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 1rem;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 80px 1rem 0;
@@ -92,6 +129,22 @@ legend,
     .theme-toggle {
         top: 1rem;
         right: 1rem;
+    }
+
+    .floating-menu {
+        top: auto;
+        right: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0.15rem;
+        padding: 0.3rem;
+    }
+
+    .floating-menu a {
+        padding: 0.45rem 0.35rem;
+        font-size: 0.7rem;
     }
 }
 
