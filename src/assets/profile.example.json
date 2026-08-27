@@ -1,0 +1,59 @@
+{
+    "intro": {
+        "name": "",
+        "blurb": "",
+        "socials": [
+            {
+                "name": "",
+                "link": ""
+            }
+        ]
+    },
+    "skills": [
+        {
+            "skill": "",
+            "link": "",
+            "category": ""
+        }
+    ],
+    "workHistory": [
+        {
+            "company": "",
+            "location": "",
+            "startDate": "",
+            "endDate": "",
+            "roles": [
+                {
+                    "title": "",
+                    "period": "",
+                    "bullets": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "",
+            "summary": "",
+            "challenge": "",
+            "contribution": "",
+            "outcome": "",
+            "technologies": [
+                ""
+            ]
+        }
+    ],
+    "credentials": [
+        {
+            "title": "",
+            "info": [
+                {
+                    "title": "",
+                    "link": ""
+                }
+            ]
+        }
+    ]
+}
