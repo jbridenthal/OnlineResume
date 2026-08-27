@@ -1,7 +1,7 @@
 {
     "intro": {
         "name": "James Bridenthal",
-        "blurb": "Systems Architect and Legacy Modernization Expert with 15 years of experience bridging complex legacy infrastructures with modern cloud system ecosystems within stand alone and enterprise applications. Proven track record of ensuring 100% uptime for mission-critical applications while architecting scalable, CI/CD-driven modernization strategies.",
+        "blurb": "Software Engineer and Legacy Modernization Expert with 15 years of experience bridging complex legacy infrastructures with modern cloud system ecosystems within stand alone and enterprise applications. Proven track record of ensuring 100% uptime for mission-critical applications while architecting scalable, CI/CD-driven modernization strategies.",
         "socials": [
             {
                 "name": "Github",
@@ -16,51 +16,123 @@
     "skills": [
         {
             "skill": "System Architecture & DevOps (CI/CD, Azure DevOps, Legacy Migration, Reverse Engineering)",
-            "link": ""
+            "link": "",
+            "category": "Architecture & Delivery"
         },
         {
             "skill": "Backend Development: 15+ years with .NET Framework, .NET Core, C#, VB.NET, ASP.NET Web API, RESTful API design.  ",
-            "link": ""
+            "link": "",
+            "category": "Engineering"
         },
         {
             "skill": "Frontend Development: Angular, React, Blazor, Astro, HTML5, CSS3, JavaScript/TypeScript",
-            "link": ""
+            "link": "",
+            "category": "Engineering"
         },
         {
             "skill": "Database Technologies: Microsoft SQL Server, MySQL",
-            "link": ""
+            "link": "",
+            "category": "Engineering"
         },
         {
             "skill": "Development Methodologies: Agile/Scrum, CI/CD, Test-Driven Development, SOLID principles",
-            "link": ""
-        },
-        {
-            "skill": "Microsoft Azure Fundamentals Certified",
-            "link": "https://www.credly.com/badges/b120fafe-59dd-46f3-ab13-76147d67d2b4"
-        },
-        {
-            "skill": "Microsoft AI Fundamentals Certified",
-            "link": "https://www.credly.com/badges/ee14e881-5d71-4380-acae-513735404da1"
+            "link": "",
+            "category": "Architecture & Delivery"
         }
     ],
     "workHistory": [
         {
-            "title": "Senior Software Engineer V",
             "company": "MRI Software",
             "location": "Cleveland, OH (Remote)",
-            "startDate": "August 2011",
+            "startDate": "July 2011",
             "endDate": "Present",
-            "bullets": [
-                "Spearheaded the rescue and stabilization of an undocumented, orphaned legacy application. Successfully reverse-engineered the core architecture, re-established local development environments, and designed a modern CI/CD pipeline in Azure DevOps to ensure future maintainability and zero downtime",
-                "Simultaneously serve as the technical lead for a modern product ecosystem, utilizing modern front-end frameworks and Azure cloud services to ensure scalable, high-performance delivery.",
-                "Full stack development in an agile environment using Angular, JavaScript, C# and other .NET technologies. Writing unit tests using NUnit, Moq, xUnit.",
-                "Mentoring summer interns as they work on their project to present to directors at the end of their internship.",
-                "Help create health check project using Playwright, C# and Azure technologies for storage and database to help ensure core product meets standards for quality product.",
-                "Create and maintain CI/CD for our software in Azure DevOps.",
-                "Maintain legacy application developed in PowerBuilder and SQL including DevOps for CI/CD.",
-                "Perform code reviews to ensure code quality meets our coding standards and aligns with business logic.",
-                "Mentor junior developers on best practices, processes and coding standards.",
-                "Develop an integration test suite using SpecFlow and NUnit to run tests against functionality and workflows."
+            "roles": [
+                {
+                    "title": "Senior Software Engineer V",
+                    "period": "2021-Present",
+                    "bullets": [
+                        "Spearheaded the rescue of an undocumented legacy application by reverse-engineering the core architecture and designing an Azure DevOps CI/CD pipeline, ensuring zero downtime.",
+                        "Serve as technical lead for a modern product ecosystem, utilizing front-end frameworks and Azure cloud services to architect scalable, high-performance features.",
+                        "Integrated AI-augmented tooling into the development workflow to accelerate modernization, refactor deprecated libraries into native framework implementations, and reduce technical debt."
+                    ]
+                },
+                {
+                    "title": "Senior Software Engineer IV",
+                    "period": "2016-2021",
+                    "bullets": [
+                        "Full stack development in an agile environment using Angular, JavaScript, C#, and other .NET technologies, with unit tests using NUnit, Moq, and xUnit.",
+                        "Mentored engineering interns from project inception through their final executive presentations.",
+                        "Architected a cloud-based automated health check system using Playwright, C#, and Azure to guarantee core product reliability.",
+                        "Created and maintained CI/CD pipelines in Azure DevOps."
+                    ]
+                },
+                {
+                    "title": "Software Engineer I-III",
+                    "period": "2011-2016",
+                    "bullets": [
+                        "Maintained a legacy application developed in PowerBuilder and SQL, including DevOps for CI/CD.",
+                        "Mentored junior developers on best practices, processes, and coding standards.",
+                        "Developed an integration test suite using SpecFlow and NUnit for functionality and workflow testing."
+                    ]
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Multi-Service Web Application Modernization",
+            "summary": "Helped modernize an undocumented web application for a product team without dedicated web development resources.",
+            "challenge": "The application consisted of seven microservices and five databases, with undocumented processes and unknown dependencies making local development and safe changes difficult.",
+            "contribution": "Started documenting the system and discovering its processes so the application could be developed locally. Partnered with a new developer during the transition and server migration.",
+            "outcome": "Successfully migrated the servers and added CI/CD with no impact to clients.",
+            "technologies": [
+                "Microservices",
+                "Databases",
+                "Server migration",
+                "CI/CD"
+            ]
+        },
+        {
+            "title": "Reusable Integration Testing Frameworks",
+            "summary": "Led small teams in building automated frontend and backend integration-testing suites that could scale as the products matured.",
+            "challenge": "The teams needed reliable automated coverage across user-facing workflows, APIs, and database results without creating a separate custom test implementation for every scenario.",
+            "contribution": "Led a team of interns in creating a Playwright frontend testing suite. Designed backend integration tests using SpecFlow and later Reqnroll to call APIs and validate database data, applying Cucumber-style scenarios and reusable coding patterns.",
+            "outcome": "Established reusable test structures that reduced the amount of new test-specific code required as coverage expanded and the projects matured.",
+            "technologies": [
+                "Playwright",
+                "SpecFlow",
+                "Reqnroll",
+                "API testing",
+                "Database validation",
+                "Cucumber-style BDD"
+            ]
+        },
+        {
+            "title": "AI-Assisted Legacy Modernization",
+            "summary": "Used AI-augmented development tools to accelerate the modernization of legacy applications while reducing technical debt.",
+            "challenge": "Legacy applications depended on deprecated libraries that made ongoing maintenance and modernization more difficult.",
+            "contribution": "Integrated AI-augmented tools into the development workflow and refactored deprecated libraries into native implementations supported by the application frameworks.",
+            "outcome": "Accelerated modernization work and reduced technical debt while preserving the behavior of the existing applications.",
+            "technologies": [
+                "AI-assisted development",
+                ".NET",
+                "Legacy modernization",
+                "Modern frontend frameworks"
+            ]
+        },
+        {
+            "title": "Legacy Application Delivery Platform",
+            "summary": "Built out CI/CD capabilities for a legacy application and its supporting databases, tooling, and quality controls.",
+            "challenge": "The product required a repeatable way to build the client application, provision database changes from SQL scripts, scan code for vulnerabilities, and recover development or QA databases when test data became unusable.",
+            "contribution": "Designed pipelines for application and SQL database builds, added vulnerability scanning, and created product-specific PowerShell and build tools. Added self-service pipelines that allowed developers and QA engineers to rebuild databases when needed.",
+            "outcome": "Created a more repeatable delivery process with integrated security checks and faster recovery for development and QA environments.",
+            "technologies": [
+                "CI/CD",
+                "SQL scripts",
+                "Vulnerability scanning",
+                "PowerShell",
+                "Custom build tooling",
+                "Database recovery"
             ]
         }
     ],
@@ -95,7 +167,7 @@
                     "link": ""
                 },
                 {
-                    "title": "Credily.com Verification",
+                    "title": "Credly.com Verification",
                     "link": "https://www.credly.com/badges/ee14e881-5d71-4380-acae-513735404da1/public_url"
                 }
             ]
@@ -108,7 +180,7 @@
                     "link": ""
                 },
                 {
-                    "title": "Credily.com Verification",
+                    "title": "Credly.com Verification",
                     "link": "https://www.credly.com/badges/b120fafe-59dd-46f3-ab13-76147d67d2b4/public_url"
                 }
             ]

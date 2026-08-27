@@ -3,10 +3,12 @@ import ProfileImage from "@assets/images/profile.png";
 import Profile from "@assets/profile.json";
 ---
 
-<section class="wrapper">
+<section class="wrapper hero">
     <div class="introContent">
         <div class="leftSide">
-            <img src={ProfileImage.src} alt={Profile.intro.name} />
+            <div class="portrait-frame">
+                <img src={ProfileImage.src} alt={Profile.intro.name} />
+            </div>
             <section class="socials">
                 {
                     Profile.intro.socials.map((social) => (
@@ -23,6 +25,7 @@ import Profile from "@assets/profile.json";
         </div>
         <div class="rightSide">
             <h1 class="name">{Profile.intro.name}</h1>
+            <p class="role">Senior Software Engineer V</p>
             <p class="intro">
                 {Profile.intro.blurb}
             </p>
@@ -31,34 +34,56 @@ import Profile from "@assets/profile.json";
 </section>
 
 <style>
+    .hero {
+        padding: 1rem 0 2rem;
+    }
+
+    .portrait-frame {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 1rem;
+        border: 2px solid var(--color-accent);
+        border-radius: 50%;
+        padding: 0.45rem;
+    }
+
     img {
         border-radius: 50%;
-        padding: 15px;
-        width: 150px;
-        margin-left: 3rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .name {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0;
+    }
+
+    .role {
+        color: var(--color-link);
+        font-size: var(--font-size-lg);
+        margin: 0.35rem 0 1rem;
     }
 
     .intro {
         font-size: 1rem;
         margin-right: 2rem;
     }
+
     .leftSide {
-        width: 325px;
-        float: left;
+        width: 280px;
         justify-content: center;
     }
 
     .rightSide {
+        flex: 1;
         justify-content: center;
-        margin-left: 1rem;
     }
 
     .introContent {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
         width: 100%;
         overflow: hidden;
     }
@@ -80,9 +105,17 @@ import Profile from "@assets/profile.json";
             float: none;
         }
 
+        .introContent {
+            display: block;
+        }
+
         img {
             display: block;
             margin: 0 auto;
+        }
+
+        .hero {
+            padding: 1rem 0 2rem;
         }
 
         .rightSide {

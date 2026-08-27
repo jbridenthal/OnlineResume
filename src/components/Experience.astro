@@ -5,30 +5,48 @@ import Profile from "@assets/profile.json";
 <div class="experience">
     {
         Profile.workHistory.map((exp) => (
-            <section>
-                <div class="title">{exp.title}</div>
+            <section class="experience-entry">
+                <div class="timeline-marker" aria-hidden="true" />
+                <h3 class="company">{exp.company}</h3>
                 <div class="subtitle">
-                    {exp.company}, {exp.location} / {exp.startDate}-
-                    {exp.endDate}
+                    {exp.location} / {exp.startDate}-{exp.endDate}
                 </div>
-                <ul>
-                    {exp.bullets.map((bullet) => (
-                        <li>{bullet}</li>
-                    ))}
-                </ul>
+                {exp.roles.map((role) => (
+                    <div class="role-entry">
+                        <h4 class="title">{role.title}</h4>
+                        <div class="role-period">{role.period}</div>
+                        <ul>
+                            {role.bullets.map((bullet) => (
+                                <li>{bullet}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
             </section>
         ))
     }
 </div>
 <style>
-    .title {
+    .company {
         font-weight: bold;
-        font-size: 1rem;
-        padding-bottom: 0.5rem;
+        font-size: 1.1rem;
+        margin: 0;
     }
+
+    .title {
+        font-size: 1rem;
+        font-style: italic;
+        margin: 1rem 0 0.25rem;
+    }
+
     .subtitle {
         font-style: italic;
         font-size: 0.7rem;
+    }
+
+    .role-period {
+        font-size: 0.8rem;
+        color: var(--color-accent);
     }
     li {
         font-size: 0.9rem;
@@ -36,8 +54,34 @@ import Profile from "@assets/profile.json";
     .experience {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
-    section {
+
+    .experience-entry {
+        position: relative;
         padding-top: 1rem;
+        padding-left: 1.5rem;
+        border-left: 2px solid var(--color-accent);
+    }
+
+    .timeline-marker {
+        position: absolute;
+        top: 1.15rem;
+        left: -0.45rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        border: 2px solid var(--color-accent);
+        border-radius: 50%;
+        background: var(--color-bg);
+    }
+
+    @media (max-width: 600px) {
+        .experience-entry {
+            padding-left: 1.25rem;
+        }
+
+        .subtitle {
+            line-height: 1.5;
+        }
     }
 </style>

@@ -3,36 +3,69 @@ import Profile from "@assets/profile.json";
 import { shared } from "@services/shared";
 
 const functions = new shared();
+const categories = [...new Set(Profile.skills.map((skill) => skill.category))];
 ---
 
-<section class="wrapper">
-    <ul>
-        {
-            Profile.skills.map(function (skill) {
-                if (functions.IsEmpty(skill.link)) {
-                    return <li> {skill.skill}</li>;
-                } else {
-                    return (
-                        <li>
-                            <a href={skill.link}>{skill.skill}</a>
-                        </li>
-                    );
-                }
-            })
-        }
-    </ul>
+<section class="skill-groups">
+    {
+        categories.map((category) => (
+            <div class="skill-group">
+                <h3>{category}</h3>
+                <ul>
+                    {Profile.skills
+                        .filter((skill) => skill.category === category)
+                        .map(function (skill) {
+                            if (functions.IsEmpty(skill.link)) {
+                                return <li>{skill.skill}</li>;
+                            } else {
+                                return (
+                                    <li>
+                                        <a href={skill.link}>{skill.skill}</a>
+                                    </li>
+                                );
+                            }
+                        })}
+                </ul>
+            </div>
+        ))
+    }
 </section>
 <style>
+    .skill-groups {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem 3rem;
+        width: 100%;
+    }
+
+    .skill-group h3 {
+        color: var(--color-accent);
+        font-size: 0.85rem;
+        letter-spacing: 0.06em;
+        margin: 0 0 0.75rem;
+        text-transform: uppercase;
+    }
+
     ul {
         list-style: none;
         list-style-position: outside;
-        padding-left: 2rem;
-        text-indent: -0.9rem;
+        margin: 0;
+        padding-left: 1.25rem;
     }
+
     ul li::before {
         content: "✓";
         color: var(--color-check);
         display: inline-block;
-        margin-right: 0.2rem;
+        margin-left: -1.25rem;
+        margin-right: 0.5rem;
+        width: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+        .skill-groups {
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
     }
 </style>

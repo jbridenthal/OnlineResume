@@ -1,11 +1,14 @@
 ---
 import "@styles/global.css";
 import Favicon from "@assets/images/favicon.ico";
+import Profile from "@assets/profile.json";
+import ProfileImage from "@assets/images/profile.png";
 export interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+const profileImageUrl = new URL(ProfileImage.src, Astro.url);
 ---
 
 <!doctype html>
@@ -14,7 +17,37 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href={Favicon} />
+		<link rel="canonical" href={Astro.url} />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={Profile.intro.blurb} />
+		<meta name="author" content={Profile.intro.name} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={Profile.intro.blurb} />
+		<meta property="og:type" content="profile" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:site_name" content="James Bridenthal" />
+		<meta property="og:image" content={profileImageUrl} />
+		<meta property="og:image:alt" content={Profile.intro.name} />
+		<meta property="profile:first_name" content="James" />
+		<meta property="profile:last_name" content="Bridenthal" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={Profile.intro.blurb} />
+		<meta name="twitter:image" content={profileImageUrl} />
+		<meta name="twitter:image:alt" content={Profile.intro.name} />
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify({
+				"@context": "https://schema.org",
+				"@type": "Person",
+				name: Profile.intro.name,
+				url: Astro.url,
+				description: Profile.intro.blurb,
+				image: profileImageUrl,
+				jobTitle: "Senior Software Engineer V",
+				sameAs: Profile.intro.socials.map((social) => social.link),
+			})}
+		/>
 		<script is:inline>
 			try {
 				const savedTheme = localStorage.getItem("resume-theme");

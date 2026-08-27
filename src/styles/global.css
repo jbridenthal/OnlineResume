@@ -14,6 +14,7 @@
     --color-link-hover: hsl(214, 23%, 64%);
     --color-hr: hsl(219, 37%, 17%);
     --color-check: rgb(22, 128, 67);
+    --color-accent: rgb(83, 179, 177);
 }
 
 :root[data-theme="light"] {
@@ -24,6 +25,7 @@
     --color-link: rgb(37, 99, 135);
     --color-link-hover: rgb(21, 67, 92);
     --color-hr: rgb(203, 213, 225);
+    --color-accent: rgb(13, 113, 111);
 }
 
 
